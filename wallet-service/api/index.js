@@ -22,7 +22,7 @@ app.use(cors({ origin: '*' }))
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json({ limit: '50mb' }))
-app.use('api/v1', wallet)
+app.use('/api/v1/wallet', wallet)
 
 app.listen(PORT, () => {
   debug(`Web server is running ${PORT}`)

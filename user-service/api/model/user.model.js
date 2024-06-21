@@ -1,6 +1,6 @@
-const jwt = require('jsonwebtoken')
-const mongoose = require('mongoose')
-const { JWT } = require('../config')
+const jwt = require("jsonwebtoken");
+const mongoose = require("mongoose");
+const { JWT } = require("../config");
 
 const UserSchema = new mongoose.Schema(
   {
@@ -17,12 +17,17 @@ const UserSchema = new mongoose.Schema(
       required: true,
     },
     phoneNumber: {
-        type: String,
-        required: true,
-      },
+      type: String,
+      required: true,
+    },
+    // wallets:
+    //   {
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: "Wallet",
+    //   },
   },
   { timestamps: true }
-)
+);
 
 UserSchema.methods.generateAuthToken = function generatedToken() {
   const token = jwt.sign(
@@ -30,11 +35,11 @@ UserSchema.methods.generateAuthToken = function generatedToken() {
       _id: this._id,
       username: this.username,
       email: this.email,
-      phoneNumber: this.phoneNumber
+      phoneNumber: this.phoneNumber,
     },
     JWT
-  )
-  return token
-}
+  );
+  return token;
+};
 
-module.exports = mongoose.model('User', UserSchema)
+module.exports = mongoose.model("User", UserSchema);

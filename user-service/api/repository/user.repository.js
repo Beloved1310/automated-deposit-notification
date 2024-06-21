@@ -11,7 +11,12 @@ const userRepository = {
   },
 
   async getUserById(id) {
-    const user = await User.findById(id).select("-__v");
+    const user = await User.findById(id).select("-__v -password")
+    // .populate({
+    //   path: "wallets",
+    //   select: "amount",
+    // });
+
     return user;
   },
 

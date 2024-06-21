@@ -4,13 +4,12 @@ const { JWT } = require("../config");
 
 const UserSchema = new mongoose.Schema(
   {
-    amount: {
+    amountDeposit: {
       type: Number,
       required: true,
     },
     userId: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
+      type: String,
       required: true,
     },
   },

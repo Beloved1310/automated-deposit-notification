@@ -35,7 +35,7 @@ const userService = {
   },
 
   async getUser(userId) {
-    const user = await userRepository.getOneUser(userId);
+    const user = await userRepository.getUserById(userId);
     if (!user) throw new ValidationError("Username not found");
     return { user };
   },
