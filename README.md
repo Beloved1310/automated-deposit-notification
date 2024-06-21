@@ -1,4 +1,4 @@
-## automated-deposit-notification
+## Automated-deposit-notification
 
 
 ## Description
@@ -13,7 +13,7 @@ This project implements a backend system using Node.js and Express to manage not
 ## Setup
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/Beloved1310/automated-deposit-notification>
    
 
 ## Future Improvements
