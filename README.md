@@ -8,7 +8,7 @@ This project implements a backend system using Node.js and Express to manage not
 - **Authentication and Authorization**: Utilizes middleware (`authMiddleware.js`) to secure endpoints.
 - **User Management Service**: Retrieves user data (`user-service`).
 - **User Wallet Service**: Manages wallet operations (`wallet-service`).
-- **Notification Service**: Sends notifications via email or mobile (`deposit-notification`).
+- **Notification Service**: Sends notifications via email(`deposit-notification`).
 
 ## Setup
 1. **Clone the repository:**
