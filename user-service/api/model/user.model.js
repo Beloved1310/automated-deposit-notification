@@ -20,11 +20,6 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    // wallets:
-    //   {
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: "Wallet",
-    //   },
   },
   { timestamps: true }
 );
