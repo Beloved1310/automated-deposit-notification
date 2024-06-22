@@ -1,7 +1,7 @@
 const { depositValidation } = require("../validation/deposit.validation");
 const { depositService } = require("../service/deposit.service");
 const ResponseService = require("../service/reponse.service");
-const { fetchWalletAmount } = require("../external/wallet.service");
+const { fetchWalletAmount } = require("../intergration/wallet.service");
 
 const depositController = {
   async processDeposit(req, res) {

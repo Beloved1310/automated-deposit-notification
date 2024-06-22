@@ -9,7 +9,6 @@ const depositService = {
       walletAmount,
       amountDeposit,
     } = value;
-    console.log(userId, email, username, walletAmount, amountDeposit);
 
     if (walletAmount < amountDeposit) {
       sendFailedDepositEmail(email, username, amountDeposit);
