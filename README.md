@@ -20,10 +20,10 @@ This project implements a backend system using Node.js and Express to manage not
 Implement automated tests for robustness and reliability.
 Implement a payment gateway 
 Enhance error handling and logging capabilities.
-Implement cron job to automate failed transactions 
+Implement a cron job to automate failed transactions 
 Extend functionality to support additional notification types or channels.
 
-## Assumptions
+Assumptions
 Microservices (Authentication, User Management, User Wallet) are independently running and accessible.
-Email sending utilities are require appropriate implementations.
+Email-sending utilities require appropriate implementations.
 Basic error handling should be expanded for production readiness.
