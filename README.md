@@ -23,7 +23,7 @@ Enhance error handling and logging capabilities.
 Implement cron job to automate failed transactions 
 Extend functionality to support additional notification types or channels.
 
-Assumptions
+## Assumptions
 Microservices (Authentication, User Management, User Wallet) are independently running and accessible.
 Email sending utilities are require appropriate implementations.
 Basic error handling should be expanded for production readiness.
